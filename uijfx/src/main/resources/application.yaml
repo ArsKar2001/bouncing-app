@@ -1,0 +1,16 @@
+spring:
+  main:
+    web-application-type: none
+  application:
+    name: 'АИС Попрыженок'
+  datasource:
+    username: sa
+    continue-on-error: on
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./h2db/bouncing
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
